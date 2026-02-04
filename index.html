@@ -1,69 +1,541 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lê Tấn Đạt - Portfolio</title>
-    <link rel="stylesheet" href="css\styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Le Tan Dat - Freelance Fullstack Developer</title>
+    <meta name="description" content="Professional freelance fullstack developer specializing in Web, Mobile, AI, and Game Development. 5+ years of experience.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="index-page">
-    <div class="matrix-bg"></div>
-    <div class="glitch-overlay"></div>
-
-    <div class="main-container">
-        <!-- Floating particles -->
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-
-        <!-- Main image container -->
-        <div class="image-container">
-            <div class="image-frame">
-                <img src="letandat2.png" alt="Lê Tấn Đạt" class="profile-image" width="400" height="400">
-                <div class="image-glitch"></div>
-                <div class="scan-line"></div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Le Tan Dat</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
 
-        <!-- Glitch text -->
-        <div class="glitch-text-container">
-            <h1 class="glitch-text" data-text="LÊ TẤN ĐẠT">LÊ TẤN ĐẠT</h1>
-            <div class="subtitle glitch-subtitle" data-text="C#/ AI DEVELOPER">C#/ AI DEVELOPER</div>
-        </div>
-
-        <!-- Profile button -->
-        <div class="button-container">
-            <a href="" class="cyber-button">
-                <span class="button-text">MY PROFILE</span>
-                <div class="button-glitch"></div>
-            </a>
-        </div>
-
-        <!-- Terminal effect -->
-        <div class="terminal">
-            <div class="terminal-header">
-                <span class="terminal-title">SYSTEM_INIT.exe</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Le Tan Dat</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Professional freelancer with 5+ years of experience in developing web, mobile, AI, and game applications. 
+                        I help businesses transform ideas into complete technology products.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i>
+                            View Portfolio
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/5.png" alt="Le Tan Dat - Freelance Developer" class="profile-img">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
             </div>
-            <div class="terminal-body">
-                <div class="terminal-line">
-                    <span class="prompt">root@hacker-tech:~$</span>
-                    <span class="command typing-effect">initializing_idbank.sh</span>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passion for creating digital solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Freelance Fullstack Developer</h3>
+                    <p>
+                        With over 5 years of experience in the technology industry, I specialize in developing 
+                        comprehensive technology solutions from web applications, mobile apps to AI solutions and game development.
+                    </p>
+                    <p>
+                        I believe the best technology is the one that solves real problems. 
+                        Each project for me is not just about code, but a story about how technology can 
+                        change and improve lives.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-rocket"></i>
+                            <span>Performance Focused</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>Client-Centric Approach</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="terminal-line">
-                    <span class="output">Loading profile data...</span>
-                </div>
-                <div class="terminal-line">
-                    <span class="output success">System ready. Welcome to the Dark kkk =)) .</span>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skills">
+                            <span class="skill-tag">C#/.NET</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Mobile & Others</h4>
+                        <div class="skills">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Unity</span>
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">Cloud Services</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script src="js\script.js"></script>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">Comprehensive digital solutions for your business</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive, and SEO-optimized websites and web applications</p>
+                    <ul class="service-features">
+                        <li>Frontend frameworks (React, Vue, Angular)</li>
+                        <li>Backend APIs (.NET, Node.js)</li>
+                        <li>Database design & optimization</li>
+                        <li>Performance & security</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform mobile applications with excellent user experience</p>
+                    <ul class="service-features">
+                        <li>React Native & Flutter</li>
+                        <li>iOS & Android native</li>
+                        <li>Cross-platform solutions</li>
+                        <li>App Store deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Integrate AI and Machine Learning to automate processes</p>
+                    <ul class="service-features">
+                        <li>Machine Learning models</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>AI chatbots & automation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>2D/3D game development with Unity for mobile and desktop</p>
+                    <ul class="service-features">
+                        <li>Unity 2D/3D games</li>
+                        <li>Mobile game optimization</li>
+                        <li>Multiplayer systems</li>
+                        <li>Game monetization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful user interface design and optimal user experience</p>
+                    <ul class="service-features">
+                        <li>User interface design</li>
+                        <li>User experience research</li>
+                        <li>Prototyping & wireframing</li>
+                        <li>Design systems</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Technical Consulting</h3>
+                    <p>Technology consulting and system architecture for your project</p>
+                    <ul class="service-features">
+                        <li>System architecture</li>
+                        <li>Technology stack selection</li>
+                        <li>Code review & optimization</li>
+                        <li>Team mentoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Some featured projects I've completed</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="E-commerce Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>E-commerce Platform</h3>
+                                <p>Full-stack e-commerce solution with React & .NET</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">.NET Core</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="Food Delivery App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Food Delivery App</h3>
+                                <p>Food delivery application with React Native</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="AI Chatbot" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>AI Customer Support</h3>
+                                <p>AI chatbot for automated customer support</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="game">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="Mobile Game" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Adventure Game</h3>
+                                <p>2D adventure game with Unity</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">2D Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="CRM System" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>CRM System</h3>
+                                <p>Enterprise customer management system</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://hzdxzgvorpzkmohpnsog.supabase.co/storage/v1/object/public/image/tu-vung-tieng-anh-coming-soon-la-gi-va-cach-dung-dung-ngu-canh.jpg" alt="Fitness App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fitness Tracker</h3>
+                                <p>Health and workout tracking application</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Health APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Ready to turn your ideas into reality</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's create something amazing together!</h3>
+                    <p>I'm always ready to listen and discuss new projects. Whether you need a website, mobile app, AI solution, or anything else - feel free to contact me!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>letandat1709@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Phone</h4>
+                                <p>0937833154</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Location</h4>
+                                <p>Ho Chi Minh City, Vietnam</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="ai">AI Solutions</option>
+                            <option value="game">Game Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="consulting">Technical Consulting</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-1k">Under $1,000</option>
+                            <option value="1k-5k">$1,000 - $5,000</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="over-10k">Over $10,000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Description *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please describe your project in detail..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Le Tan Dat. All rights reserved.</p>
+                    <p>Freelance Fullstack Developer | Web Designer | AI & Mobile Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/script.js"></script>
+    <!-- SMTP.js for email sending -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
