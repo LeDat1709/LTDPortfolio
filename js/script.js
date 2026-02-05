@@ -14,6 +14,7 @@ class PortfolioApp {
         this.setupSmoothScrolling();
         this.setupPortfolioFilter();
         this.setupScrollToTop();
+        this.setup3DCubeParallax(); // Add 3D cube parallax
     }
 
     // Navigation functionality
@@ -415,6 +416,68 @@ class PortfolioApp {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+    }
+
+    // Setup 3D cube parallax effect
+    setup3DCubeParallax() {
+        const cube = document.querySelector('.hero-3d-element');
+        const cubeInner = document.querySelector('.cube-3d');
+        
+        if (!cube) return;
+
+        let ticking = false;
+        
+        const updateCubePosition = () => {
+            const scrolled = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            
+            // Parallax movement - cube moves slower than scroll
+            const parallaxSpeed = 0.2;
+            const yOffset = scrolled * parallaxSpeed;
+            
+            // Rotate based on scroll
+            const rotationSpeed = 0.15;
+            const rotation = scrolled * rotationSpeed;
+            
+            // Scale effect - cube gets smaller but stays visible
+            const scaleSpeed = 0.0002;
+            const scale = Math.max(0.7, 1 - (scrolled * scaleSpeed));
+            
+            // Opacity - keep it visible (minimum 0.5)
+            const opacitySpeed = 0.0008;
+            const opacity = Math.max(0.5, 1 - (scrolled * opacitySpeed));
+            
+            // Apply transforms
+            cube.style.transform = `translate(-50%, calc(-50% + ${yOffset}px)) scale(${scale})`;
+            cube.style.opacity = opacity;
+            
+            // Add extra rotation to the cube itself
+            if (cubeInner) {
+                cubeInner.style.transform = `rotateX(${-20 + rotation}deg) rotateY(${-20 + rotation}deg)`;
+            }
+            
+            ticking = false;
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateCubePosition);
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Mouse parallax effect - more subtle
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = (e.clientX / window.innerWidth - 0.5) * 15;
+            const mouseY = (e.clientY / window.innerHeight - 0.5) * 15;
+            
+            if (cubeInner) {
+                const scrolled = window.pageYOffset;
+                const rotation = scrolled * 0.15;
+                
+                cubeInner.style.transform = `rotateX(${-20 + rotation + mouseY}deg) rotateY(${-20 + rotation + mouseX}deg)`;
+            }
         });
     }
 }
